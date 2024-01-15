@@ -8,7 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LoginPageCompleteTest {
+public class LogoutPageTest {
 
     // WebDriver instance for interacting with the browser
     private WebDriver driver;
@@ -20,11 +20,8 @@ public class LoginPageCompleteTest {
     private final By USERNAME_LOCATOR = By.id("username");
     private final By PASSWORD_LOCATOR = By.id("password"); ///html//input[@id='password']
     private final By LOGIN_BUTTON_LOCATOR = By.className("radius");
+    private final By LOGOUT_BUTTON_LOCATOR = By.xpath("//a[@class ='button secondary radius']");
     private final By FLASH_MESSAGE_LOCATOR = By.id("flash-messages");
-
-    // Test data for invalid login attempts
-    String inputUsername = "wrongUserName";
-    String inputPassword = "wrongPassword";
 
     // Set up WebDriver and open the base URL before each test
     @BeforeTest
@@ -63,27 +60,12 @@ public class LoginPageCompleteTest {
         return driver.findElement(FLASH_MESSAGE_LOCATOR).getText();
     }
 
-    // Test login with an invalid username
+    // Test logout message
     @Test(priority = 1)
-    public void testLoginWithWrongUserName() {
-        setupLoginInputs(inputUsername, PASSWORD);
-        String flashMessage = getFlashMessage();
-        Assert.assertTrue(flashMessage.contains("Your username is invalid!"));
-    }
-
-    // Test login with an invalid password
-    @Test(priority = 2)
-    public void testLoginWithWrongPassword() {
-        setupLoginInputs(USERNAME, inputPassword);
-        //String flashMessage = getFlashMessage();
-        Assert.assertTrue(getFlashMessage().contains("Your password is invalid!"));
-    }
-
-    // Test login with correct credentials
-    @Test(priority = 3)
-    public void testLoginWithCorrectCredentials() {
+    public void testLogoutMessage() {
         setupLoginInputs(USERNAME, PASSWORD);
-        //String flashMessage = getFlashMessage();
-        Assert.assertTrue(getFlashMessage().contains("You logged into a secure area!"));
+        driver.findElement(LOGOUT_BUTTON_LOCATOR).click();
+        Assert.assertTrue(getFlashMessage().contains("You logged out of the secure area!"));
+        //Assert.assertEquals(driver.getCurrentUrl(), BASE_URL);
     }
 }
