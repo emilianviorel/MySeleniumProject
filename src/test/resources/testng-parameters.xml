@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Login Page Complete Parameterized Test" verbose="1">
+    <parameter name="browserP" value="firefox"/>
+
+    <test name="LoginPageWithInvalidUser">
+
+        <parameter name="inputUserNameP" value="wrongUserName"/>
+        <parameter name="inputPasswordP" value="SuperSecretPassword!"/>
+        <parameter name="flashMessageP" value="Your username is invalid!"/>
+        <classes>
+            <class name="com.herokuapp.LoginPageCompleteParameterizedTest"/>
+        </classes>
+    </test>
+
+    <test name="LoginPageWithInvalidPassword">
+        <parameter name="inputUserNameP" value="tomsmith"/>
+        <parameter name="inputPasswordP" value="wrongPassword"/>
+        <parameter name="flashMessageP" value="Your password is invalid!"/>
+        <classes>
+            <class name="com.herokuapp.LoginPageCompleteParameterizedTest"/>
+        </classes>
+    </test>
+
+    <test name="LoginPageWithCorrectCredentials">
+        <parameter name="inputUserNameP" value="tomsmith"/>
+        <parameter name="inputPasswordP" value="SuperSecretPassword!"/>
+        <parameter name="flashMessageP" value="You logged into a secure area!"/>
+        <classes>
+            <class name="com.herokuapp.LoginPageCompleteParameterizedTest"/>
+        </classes>
+    </test>
+</suite>
