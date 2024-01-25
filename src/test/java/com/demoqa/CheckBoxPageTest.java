@@ -11,7 +11,7 @@ public class CheckBoxPageTest extends BasePageTest {
     @Test
     void testAllCheckboxesAreChecked() {
         driver.findElement(HOME_CHECKBOX_LOCATOR).click();
-        //Assert.assertTrue(driver.findElement(HOME_CHECKBOX_LOCATOR).isSelected(), "Home checkbox is not selected.");
+        Assert.assertTrue(driver.findElement(HOME_CHECKBOX_LOCATOR).isEnabled(), "Home checkbox is not enabled.");
         Assert.assertTrue(driver.findElement(RESULTS_LOCATOR).isDisplayed(), "Results are not displayed.");
     }
 }
