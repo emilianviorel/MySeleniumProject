@@ -11,10 +11,15 @@ public class RadioButtonPageTest extends BasePageTest {
 
     @Test
     void testYesAndImpressiveRadioButton() {
-        driver.findElement(YES_RADIO_BUTTON_LOCATOR).click();
+        // Click Yes radio button only if not already selected
+        if (!driver.findElement(YES_RADIO_BUTTON_LOCATOR).isSelected()) {
+            driver.findElement(YES_RADIO_BUTTON_LOCATOR).click();
+        }
         Assert.assertEquals(driver.findElement(SUCCESS_TEXT_LOCATOR).getText(), "You have selected Yes");
 
-        driver.findElement(IMPRESSIVE_RADIO_BUTTON_LOCATOR).click();
+        if (!driver.findElement(IMPRESSIVE_RADIO_BUTTON_LOCATOR).isSelected()) {
+            driver.findElement(IMPRESSIVE_RADIO_BUTTON_LOCATOR).click();
+        }
         Assert.assertEquals(driver.findElement(SUCCESS_TEXT_LOCATOR).getText(), "You have selected Impressive");
     }
 }
