@@ -33,4 +33,12 @@ public class BasePageTest {
     public void tearDown() {
         driver.quit();
     }
+
+    public void sleep(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

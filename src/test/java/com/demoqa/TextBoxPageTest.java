@@ -5,6 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 public class TextBoxPageTest extends BasePageTest {
     public final By FULL_NAME_LOCATOR = By.xpath("//input[@id='userName']");
     public final By EMAIL_LOCATOR = By.xpath("//input[@id='userEmail']");
@@ -27,15 +30,17 @@ public class TextBoxPageTest extends BasePageTest {
         driver.findElement(SUBMIT_BUTTON_LOCATOR).click();
 
         //AssertEquals for exact match
-        Assert.assertEquals(driver.findElement(OUTPUT_NAME_LOCATOR).getText(), "Name:" + username, "Output name does not match the expected value.");
-        Assert.assertEquals(driver.findElement(OUTPUT_EMAIL_LOCATOR).getText(), "Email:" + email, "Output email does not match the expected value.");
-        Assert.assertEquals(driver.findElement(OUTPUT_CURRENT_ADDRESS_LOCATOR).getText(), "Current Address :" + currentAddress, "Output current address does not match the expected value.");
-        //Assert.assertEquals(driver.findElement(OUTPUT_PERMANENT_ADDRESS_LOCATOR).getText(), "Permanent Address :" + permanentAddress, "Output permanent address does not match the expected value.");
+        assertEquals(driver.findElement(OUTPUT_NAME_LOCATOR).getText(), "Name:" + username, "Output name does not match the expected value.");
+        assertEquals(driver.findElement(OUTPUT_EMAIL_LOCATOR).getText(), "Email:" + email, "Output email does not match the expected value.");
+        assertEquals(driver.findElement(OUTPUT_CURRENT_ADDRESS_LOCATOR).getText(), "Current Address :" + currentAddress, "Output current address does not match the expected value.");
+
+        //Test failed: ER: Permanent, AR:Permananet
+        Assert.assertEquals(driver.findElement(OUTPUT_PERMANENT_ADDRESS_LOCATOR).getText(), "Permanent Address :" + permanentAddress, "Output permanent address does not match the expected value.");
 
         //AssertTrue with contains for approximate match
-        Assert.assertTrue(driver.findElement(OUTPUT_NAME_LOCATOR).getText().contains(username));
-        Assert.assertTrue(driver.findElement(OUTPUT_EMAIL_LOCATOR).getText().contains(email));
-        Assert.assertTrue(driver.findElement(OUTPUT_CURRENT_ADDRESS_LOCATOR).getText().contains(currentAddress));
-        Assert.assertTrue(driver.findElement(OUTPUT_PERMANENT_ADDRESS_LOCATOR).getText().contains(permanentAddress));
+        assertTrue(driver.findElement(OUTPUT_NAME_LOCATOR).getText().contains(username));
+        assertTrue(driver.findElement(OUTPUT_EMAIL_LOCATOR).getText().contains(email));
+        assertTrue(driver.findElement(OUTPUT_CURRENT_ADDRESS_LOCATOR).getText().contains(currentAddress));
+        assertTrue(driver.findElement(OUTPUT_PERMANENT_ADDRESS_LOCATOR).getText().contains(permanentAddress));
     }
 }
