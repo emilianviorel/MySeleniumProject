@@ -3,6 +3,7 @@ package com.demoqa;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 public class CheckBoxPageTest extends BasePageTest {
@@ -13,8 +14,8 @@ public class CheckBoxPageTest extends BasePageTest {
             "workspace", "react", "angular", "veu", "office", "public", "private",
             "classified", "general", "downloads", "wordFile", "excelFile"};
 
-    @Test
-    void testAllCheckboxesAreChecked() {
+    @Test(priority = 1)
+    void testCheckAllCheckboxes() {
 
         if (!driver.findElement(HOME_CHECKBOX_SVG_LOCATOR).isSelected()) {
             driver.findElement(HOME_CHECKBOX_SVG_LOCATOR).click();
@@ -26,5 +27,14 @@ public class CheckBoxPageTest extends BasePageTest {
         for (String folder : SELECTED_FOLDER) {
             assertTrue(driver.findElement(RESULTS_LOCATOR).getText().contains(folder), "Folder'" + folder + "' not selected.");
         }
+    }
+
+    @Test(priority = 2)
+    void testUncheckAllCheckboxes() {
+
+        if (driver.findElement(HOME_CHECKBOX_LOCATOR).isSelected()) {
+            driver.findElement(HOME_CHECKBOX_SVG_LOCATOR).click();
+        }
+        assertFalse(driver.findElement(HOME_CHECKBOX_LOCATOR).isSelected(), "Home checkbox is selected.");
     }
 }
