@@ -1,5 +1,6 @@
 package com.demoqa;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -10,6 +11,7 @@ import org.testng.annotations.Parameters;
 
 public class BasePageTest {
     public WebDriver driver;
+    public final By CONSENT = By.xpath("//button[@aria-label='Consent']");
 
     @Parameters({"browser", "testPageUrl"})
     @BeforeTest
@@ -27,6 +29,14 @@ public class BasePageTest {
         }
         driver.get(testPageUrl);
         driver.manage().window().maximize();
+
+        try {
+            if (driver.findElement(CONSENT).isDisplayed()) {
+                driver.findElement(CONSENT).click();
+            }
+        } catch (Exception error) {
+            throw new RuntimeException("No Consent button");
+        }
     }
 
     @AfterTest(alwaysRun = true)
