@@ -28,4 +28,11 @@
             <class name="com.demoqa.RadioButtonPageTest"/>
         </classes>
     </test>
+
+    <test name="WaitPageTest">
+        <parameter name="testPageUrl" value="https://demoqa.com/alerts"/>
+        <classes>
+            <class name="com.demoqa.WaitPageTest"/>
+        </classes>
+    </test>
 </suite>
