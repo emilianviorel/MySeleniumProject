@@ -35,4 +35,12 @@
             <class name="com.demoqa.WaitPageTest"/>
         </classes>
     </test>
+
+    <test name="UploadDownloadPageTest">
+        <parameter name="testPageUrl" value="https://demoqa.com/upload-download"/>
+        <classes>
+            <class name="com.demoqa.UploadDownloadPageTest"/>
+        </classes>
+    </test>
+
 </suite>
