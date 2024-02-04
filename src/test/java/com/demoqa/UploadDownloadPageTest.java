@@ -25,17 +25,11 @@ public class UploadDownloadPageTest extends BasePageTest {
     public void testDownloadFileButtonFunctionality() {
 
         driver.findElement(DOWNLOAD_FILE_BUTTON).click();
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleep(3000);
 
         String downloadFilePath = System.getProperty("user.home") + "/Downloads/sampleFile.jpeg";
         System.out.println(downloadFilePath);
         File downloadedFile = new File(downloadFilePath);
         Assert.assertTrue(downloadedFile.exists(), "Downloaded file does not exist");
-
     }
 }

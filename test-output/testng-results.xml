@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-04T13:51:44 EET" name="DEMOQA Test" finished-at="2024-02-04T13:52:16 EET" duration-ms="31540">
+  <suite started-at="2024-02-04T14:57:15 EET" name="DEMOQA Test" finished-at="2024-02-04T14:57:48 EET" duration-ms="32356">
     <groups>
     </groups>
-    <test started-at="2024-02-04T13:51:44 EET" name="TextBoxPageTest" finished-at="2024-02-04T13:51:49 EET" duration-ms="5340">
+    <test started-at="2024-02-04T14:57:15 EET" name="TextBoxPageTest" finished-at="2024-02-04T14:57:22 EET" duration-ms="6092">
       <class name="com.demoqa.TextBoxPageTest">
-        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TextBoxPageTest@4b5189ac]" started-at="2024-02-04T13:51:44 EET" name="driverSetup" finished-at="2024-02-04T13:51:48 EET" duration-ms="4034" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TextBoxPageTest@404bbcbd]" started-at="2024-02-04T14:57:15 EET" name="driverSetup" finished-at="2024-02-04T14:57:20 EET" duration-ms="4153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="testSubmitTextBoxValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TextBoxPageTest@4b5189ac]" started-at="2024-02-04T13:51:48 EET" name="testSubmitTextBoxValues" finished-at="2024-02-04T13:51:49 EET" duration-ms="1149" status="PASS">
+        <test-method signature="testSubmitTextBoxValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TextBoxPageTest@404bbcbd]" started-at="2024-02-04T14:57:20 EET" name="testSubmitTextBoxValues" finished-at="2024-02-04T14:57:21 EET" duration-ms="1757" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubmitTextBoxValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.TextBoxPageTest@4b5189ac]" started-at="2024-02-04T13:51:49 EET" name="tearDown" finished-at="2024-02-04T13:51:49 EET" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.TextBoxPageTest@404bbcbd]" started-at="2024-02-04T14:57:21 EET" name="tearDown" finished-at="2024-02-04T14:57:22 EET" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoqa.TextBoxPageTest -->
     </test> <!-- TextBoxPageTest -->
-    <test started-at="2024-02-04T13:51:49 EET" name="CheckBoxPageTest" finished-at="2024-02-04T13:51:55 EET" duration-ms="5416">
+    <test started-at="2024-02-04T14:57:22 EET" name="CheckBoxPageTest" finished-at="2024-02-04T14:57:27 EET" duration-ms="5281">
       <class name="com.demoqa.CheckBoxPageTest">
-        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.CheckBoxPageTest@616ac46a]" started-at="2024-02-04T13:51:49 EET" name="driverSetup" finished-at="2024-02-04T13:51:53 EET" duration-ms="3512" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.CheckBoxPageTest@6337c201]" started-at="2024-02-04T14:57:22 EET" name="driverSetup" finished-at="2024-02-04T14:57:25 EET" duration-ms="3562" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,23 +73,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="testCheckAllCheckboxes()[pri:1, instance:com.demoqa.CheckBoxPageTest@616ac46a]" started-at="2024-02-04T13:51:53 EET" name="testCheckAllCheckboxes" finished-at="2024-02-04T13:51:55 EET" duration-ms="1662" status="PASS">
+        <test-method signature="testCheckAllCheckboxes()[pri:1, instance:com.demoqa.CheckBoxPageTest@6337c201]" started-at="2024-02-04T14:57:25 EET" name="testCheckAllCheckboxes" finished-at="2024-02-04T14:57:27 EET" duration-ms="1387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckAllCheckboxes -->
-        <test-method signature="testUncheckAllCheckboxes()[pri:2, instance:com.demoqa.CheckBoxPageTest@616ac46a]" started-at="2024-02-04T13:51:55 EET" name="testUncheckAllCheckboxes" finished-at="2024-02-04T13:51:55 EET" duration-ms="108" status="PASS">
+        <test-method signature="testUncheckAllCheckboxes()[pri:2, instance:com.demoqa.CheckBoxPageTest@6337c201]" started-at="2024-02-04T14:57:27 EET" name="testUncheckAllCheckboxes" finished-at="2024-02-04T14:57:27 EET" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUncheckAllCheckboxes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.CheckBoxPageTest@616ac46a]" started-at="2024-02-04T13:51:55 EET" name="tearDown" finished-at="2024-02-04T13:51:55 EET" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.CheckBoxPageTest@6337c201]" started-at="2024-02-04T14:57:27 EET" name="tearDown" finished-at="2024-02-04T14:57:27 EET" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoqa.CheckBoxPageTest -->
     </test> <!-- CheckBoxPageTest -->
-    <test started-at="2024-02-04T13:51:55 EET" name="RadioButtonPageTest" finished-at="2024-02-04T13:51:59 EET" duration-ms="4296">
+    <test started-at="2024-02-04T14:57:27 EET" name="RadioButtonPageTest" finished-at="2024-02-04T14:57:32 EET" duration-ms="4611">
       <class name="com.demoqa.RadioButtonPageTest">
-        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.RadioButtonPageTest@5c669da8]" started-at="2024-02-04T13:51:55 EET" name="driverSetup" finished-at="2024-02-04T13:51:58 EET" duration-ms="3547" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.RadioButtonPageTest@934b6cb]" started-at="2024-02-04T14:57:27 EET" name="driverSetup" finished-at="2024-02-04T14:57:31 EET" duration-ms="3711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,27 +105,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="testYesRadioButton()[pri:1, instance:com.demoqa.RadioButtonPageTest@5c669da8]" started-at="2024-02-04T13:51:58 EET" name="testYesRadioButton" finished-at="2024-02-04T13:51:59 EET" duration-ms="326" status="PASS">
+        <test-method signature="testYesRadioButton()[pri:1, instance:com.demoqa.RadioButtonPageTest@934b6cb]" started-at="2024-02-04T14:57:31 EET" name="testYesRadioButton" finished-at="2024-02-04T14:57:31 EET" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testYesRadioButton -->
-        <test-method signature="testImpressiveRadioButton()[pri:2, instance:com.demoqa.RadioButtonPageTest@5c669da8]" started-at="2024-02-04T13:51:59 EET" name="testImpressiveRadioButton" finished-at="2024-02-04T13:51:59 EET" duration-ms="155" status="PASS">
+        <test-method signature="testImpressiveRadioButton()[pri:2, instance:com.demoqa.RadioButtonPageTest@934b6cb]" started-at="2024-02-04T14:57:31 EET" name="testImpressiveRadioButton" finished-at="2024-02-04T14:57:31 EET" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testImpressiveRadioButton -->
-        <test-method signature="testNoRadioButton()[pri:3, instance:com.demoqa.RadioButtonPageTest@5c669da8]" started-at="2024-02-04T13:51:59 EET" name="testNoRadioButton" finished-at="2024-02-04T13:51:59 EET" duration-ms="128" status="PASS">
+        <test-method signature="testNoRadioButton()[pri:3, instance:com.demoqa.RadioButtonPageTest@934b6cb]" started-at="2024-02-04T14:57:31 EET" name="testNoRadioButton" finished-at="2024-02-04T14:57:31 EET" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNoRadioButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.RadioButtonPageTest@5c669da8]" started-at="2024-02-04T13:51:59 EET" name="tearDown" finished-at="2024-02-04T13:51:59 EET" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.RadioButtonPageTest@934b6cb]" started-at="2024-02-04T14:57:31 EET" name="tearDown" finished-at="2024-02-04T14:57:32 EET" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoqa.RadioButtonPageTest -->
     </test> <!-- RadioButtonPageTest -->
-    <test started-at="2024-02-04T13:51:59 EET" name="WaitPageTest" finished-at="2024-02-04T13:52:09 EET" duration-ms="9318">
+    <test started-at="2024-02-04T14:57:32 EET" name="WaitPageTest" finished-at="2024-02-04T14:57:41 EET" duration-ms="9233">
       <class name="com.demoqa.WaitPageTest">
-        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.WaitPageTest@b83a9be]" started-at="2024-02-04T13:51:59 EET" name="driverSetup" finished-at="2024-02-04T13:52:03 EET" duration-ms="3326" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.WaitPageTest@2b175c00]" started-at="2024-02-04T14:57:32 EET" name="driverSetup" finished-at="2024-02-04T14:57:35 EET" duration-ms="3190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,27 +141,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="testAlertAppearAfter5Seconds()[pri:0, instance:com.demoqa.WaitPageTest@b83a9be]" started-at="2024-02-04T13:52:03 EET" name="testAlertAppearAfter5Seconds" finished-at="2024-02-04T13:52:08 EET" duration-ms="5528" status="PASS">
+        <test-method signature="testAlertAppearAfter5Seconds()[pri:0, instance:com.demoqa.WaitPageTest@2b175c00]" started-at="2024-02-04T14:57:35 EET" name="testAlertAppearAfter5Seconds" finished-at="2024-02-04T14:57:40 EET" duration-ms="5624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAlertAppearAfter5Seconds -->
-        <test-method signature="testConfirmButton()[pri:0, instance:com.demoqa.WaitPageTest@b83a9be]" started-at="2024-02-04T13:52:08 EET" name="testConfirmButton" finished-at="2024-02-04T13:52:08 EET" duration-ms="174" status="PASS">
+        <test-method signature="testConfirmButton()[pri:0, instance:com.demoqa.WaitPageTest@2b175c00]" started-at="2024-02-04T14:57:40 EET" name="testConfirmButton" finished-at="2024-02-04T14:57:41 EET" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConfirmButton -->
-        <test-method signature="testPromptBox()[pri:0, instance:com.demoqa.WaitPageTest@b83a9be]" started-at="2024-02-04T13:52:08 EET" name="testPromptBox" finished-at="2024-02-04T13:52:08 EET" duration-ms="165" status="PASS">
+        <test-method signature="testPromptBox()[pri:0, instance:com.demoqa.WaitPageTest@2b175c00]" started-at="2024-02-04T14:57:41 EET" name="testPromptBox" finished-at="2024-02-04T14:57:41 EET" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPromptBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.WaitPageTest@b83a9be]" started-at="2024-02-04T13:52:08 EET" name="tearDown" finished-at="2024-02-04T13:52:09 EET" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.WaitPageTest@2b175c00]" started-at="2024-02-04T14:57:41 EET" name="tearDown" finished-at="2024-02-04T14:57:41 EET" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoqa.WaitPageTest -->
     </test> <!-- WaitPageTest -->
-    <test started-at="2024-02-04T13:52:09 EET" name="UploadDownloadPageTest" finished-at="2024-02-04T13:52:16 EET" duration-ms="7096">
+    <test started-at="2024-02-04T14:57:41 EET" name="UploadDownloadPageTest" finished-at="2024-02-04T14:57:48 EET" duration-ms="7042">
       <class name="com.demoqa.UploadDownloadPageTest">
-        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.UploadDownloadPageTest@6cdba6dc]" started-at="2024-02-04T13:52:09 EET" name="driverSetup" finished-at="2024-02-04T13:52:12 EET" duration-ms="3286" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.UploadDownloadPageTest@78aa1f72]" started-at="2024-02-04T14:57:41 EET" name="driverSetup" finished-at="2024-02-04T14:57:44 EET" duration-ms="3325" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,15 +177,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="testUploadFileButtonFunctionality()[pri:1, instance:com.demoqa.UploadDownloadPageTest@6cdba6dc]" started-at="2024-02-04T13:52:12 EET" name="testUploadFileButtonFunctionality" finished-at="2024-02-04T13:52:12 EET" duration-ms="307" status="PASS">
+        <test-method signature="testUploadFileButtonFunctionality()[pri:1, instance:com.demoqa.UploadDownloadPageTest@78aa1f72]" started-at="2024-02-04T14:57:44 EET" name="testUploadFileButtonFunctionality" finished-at="2024-02-04T14:57:44 EET" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUploadFileButtonFunctionality -->
-        <test-method signature="testDownloadFileButtonFunctionality()[pri:2, instance:com.demoqa.UploadDownloadPageTest@6cdba6dc]" started-at="2024-02-04T13:52:12 EET" name="testDownloadFileButtonFunctionality" finished-at="2024-02-04T13:52:16 EET" duration-ms="3372" status="PASS">
+        <test-method signature="testDownloadFileButtonFunctionality()[pri:2, instance:com.demoqa.UploadDownloadPageTest@78aa1f72]" started-at="2024-02-04T14:57:44 EET" name="testDownloadFileButtonFunctionality" finished-at="2024-02-04T14:57:48 EET" duration-ms="3357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDownloadFileButtonFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.UploadDownloadPageTest@6cdba6dc]" started-at="2024-02-04T13:52:16 EET" name="tearDown" finished-at="2024-02-04T13:52:16 EET" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.UploadDownloadPageTest@78aa1f72]" started-at="2024-02-04T14:57:48 EET" name="tearDown" finished-at="2024-02-04T14:57:48 EET" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
