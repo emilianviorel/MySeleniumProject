@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [DEMOQA Test]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value=""/>
-  <test thread-count="5" name="WaitPageTest(failed)">
-    <parameter name="testPageUrl" value="https://demoqa.com/alerts"/>
+  <test thread-count="5" name="UploadDownloadPageTest(failed)">
+    <parameter name="testPageUrl" value="https://demoqa.com/upload-download"/>
     <classes>
-      <class name="com.demoqa.WaitPageTest">
+      <class name="com.demoqa.UploadDownloadPageTest">
         <methods>
           <include name="driverSetup"/>
           <include name="tearDown"/>
-          <include name="testPromptBox"/>
+          <include name="testDownloadFileButtonFunctionality"/>
         </methods>
-      </class> <!-- com.demoqa.WaitPageTest -->
+      </class> <!-- com.demoqa.UploadDownloadPageTest -->
     </classes>
-  </test> <!-- WaitPageTest(failed) -->
+  </test> <!-- UploadDownloadPageTest(failed) -->
 </suite> <!-- Failed suite [DEMOQA Test] -->
